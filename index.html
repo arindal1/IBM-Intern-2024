@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Buddy</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStL3tmadzMewlU-2_S2nLjXvvhVzENo1pljQ&s" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="res/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Enhance Your Learning Journey with Study Buddy</h1>
+        <h2>Empowering Students Through Education</h2>
+        <div class="shopping-bag"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">My Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </nav>
+    </header>
+    <section class="featured-post">
+        <a href="www.example.com"><img src="res/1.png" alt="Laptop, stationery, and coffee cup representing study"></a>
+        <h3><a href="www.example.com">Maximize Study Efficiency with Interactive Learning Platform</a></h3>
+        <p>Are you tired of spending hours on end studying, only to feel like you've barely made a dent in your academic material? Enter Study...</p>
+    </section>
+    <section class="content-section">
+        <div class="left-column">
+            <div class="post">
+                <a href="www.example.com"><img src="res/2.png" alt="Stacked books"></a>
+                <a href="www.example.com"><h3>Tailored Study Plans for Academic Success in Every Grade</h3></a>
+                <p>Are you a student looking to excel academically and achieve success in every grade? Look no further...</p>
+            </div>
+            <div class="post">
+                <a href="www.example.com"><img src="res/3.png" alt="Laptop"></a>
+                <a href="www.example.com"><h3>Maximize Study Efficiency with Interactive Learning...</h3></a>
+                <p>Are you tired of spending hours on end studying, only to feel like you've barely made a dent in your understanding...</p>
+            </div>
+            <div class="post">
+                <a href="www.example.com"><img src="res/4.png" alt="Laptop"></a>
+                <a href="www.example.com"><h3>Enhance Learning Experience with Customizable Quiz Practice...</h3></a>
+                <p>Are you looking to take your academic learning to the next level? Say goodbye to traditional...</p>
+            </div>
+        </div>
+        <div class="right-column">
+            <a href="www.example.com"><img src="res/5.jpeg" alt="Laptop"></a>
+            <h2>About Study Buddy</h2>
+            <p>Study Buddy is an interactive platform designed to support students in their academic pursuits. It offers instant answers to study-related questions, access to educational resources, customizable practice quizzes, study schedule organization, and timely reminders. The main goal is to enhance students' learning by providing a comprehensive platform that makes studying more efficient and organized. Additional goals include tailoring content to specific age groups, focusing on academic subjects, offering personalized study plans, and...</p>
+            <a href="www.example.com">Read more...</a>
+        </div>
+    </section>
+</body>
+<script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "498e57ec-dd06-4d37-b819-c2d2e6441f91", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "a239b535-caba-4abe-85a5-5d2afe4faee2", // The ID of your service instance.
+      onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+</html>
